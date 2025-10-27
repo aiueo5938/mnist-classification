@@ -2,7 +2,7 @@
 
 ## セットアップ
 
-### リポジトリのクローンとプログラムの実行
+### リポジトリのクローン
 ```
 cd /work
 git clone https://github.com/aiueo5938/mnist-classification.git
