@@ -13,14 +13,24 @@ transform = transforms.Compose(
 )
 
 # MNISTデータセットのダウンロードと読み込み
-train_dataset = datasets.MNIST(root="./data", train=True, download=True, transform=transform)
-test_dataset = datasets.MNIST(root="./data", train=False, download=True, transform=transform)
+train_dataset = datasets.MNIST(
+    root="./data",
+    train=True,
+    download=True,
+    transform=transform,
+)
+test_dataset = datasets.MNIST(
+    root="./data",
+    train=False,
+    download=True,
+    transform=transform,
+)
 
 train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=1000, shuffle=False)
 
 
-# ニューラルネットワークモデル
+# ニューラルネットワーク
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -54,7 +64,7 @@ for epoch in range(num_epochs):
         running_loss += loss.item()
     print(f"Epoch {epoch+1}/{num_epochs}, Loss: {running_loss/len(train_loader):.4f}")
 
-# テスト
+# モデルの評価
 model.eval()
 correct = 0
 total = 0

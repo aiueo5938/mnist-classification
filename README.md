@@ -13,7 +13,7 @@ cd ./mnist-classification
 pyenv virtualenv 3.13.4 torch
 pyenv local torch
 ```
-### Pytorchのインストール
+### [Pytorch](https://pytorch.org/get-started/locally/)のインストール
 ```
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
