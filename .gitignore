@@ -3,7 +3,7 @@
 *.exe
 *.pyc
 ignore/
-__pycache__/
-/.python-version
 venv/
 data/
+__pycache__/
+/.python-version
