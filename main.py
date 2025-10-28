@@ -26,6 +26,14 @@ test_dataset = datasets.MNIST(
     transform=transform,
 )
 
+# 最初の画像データとラベルを取得
+image, label = train_dataset[0]
+
+# 画像表示（torch.Tensor を numpy に変換）
+plt.imshow(image.squeeze().numpy(), cmap="gray")
+plt.title(f"Label: {label}")
+plt.show()
+
 train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=1000, shuffle=False)
 
