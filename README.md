@@ -23,21 +23,29 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 </div>
 
 ### モデルの評価方法
+機械学習における代表的な評価指標としてAccuracy, Recall Precision, F1があるが、今回はAccuracyの算出を実際にプログラムで体験してもらう。
+| 略称  | 英語名             | 日本語訳   | 意味                       |
+|------|------------------|----------|-------------------------------|
+| TP   | True Positive    | 真陽性    | 本当は陽性で、予測も陽性と判定した     |
+| TN   | True Negative    | 真陰性    | 本当は陰性で、予測も陰性と判定した     |
+| FP   | False Positive   | 偽陽性    | 本当は陰性だが、予測は陽性と判定した   |
+| FN   | False Negative   | 偽陰性    | 本当は陽性だが、予測は陰性と判定した   |
 
-| 略称 | 英語名           | 日本語訳   | 内容説明                                               |
-|------|------------------|-----------|-------------------------------------------------------|
-| TP   | True Positive    | 真陽性    | 本当は陽性（例：病気あり）で、予測も陽性と判定した     |
-| TN   | True Negative    | 真陰性    | 本当は陰性（例：病気なし）で、予測も陰性と判定した     |
-| FP   | False Positive   | 偽陽性    | 本当は陰性（例：病気なし）だが、予測は陽性と判定した   |
-| FN   | False Negative   | 偽陰性    | 本当は陽性（例：病気あり）だが、予測は陰性と判定した   |
-
-| 指標      | 日本語訳    | 定義・数式                                         | 主な意味・使いどころ                     |
+| 指標       | 日本語訳     | 定義・数式                                            | 主な意味・使いどころ                     |
 |-----------|------------|----------------------------------------------------|------------------------------------------|
-| <font color="red">Accuracy</font>  | 正解率      | \( \frac{TP + TN}{TP + TN + FP + FN} \)            | 全予測のうち、どれだけ正しいか           |
-| Precision | 適合率      | \( \frac{TP}{TP + FP} \)                           | 「正」と予測したうち、実際に正であった割合|
-| Recall    | 再現率      | \( \frac{TP}{TP + FN} \)                           | 実際に正であったもののうち、どれだけ「正」と予測できたか |
-| F1-score  | F1スコア    | \( \frac{2 \times Precision \times Recall}{Precision + Recall} \) | Precision・Recallの調和平均。バランス重視に使う       |
+| ***Accuracy*** | ***正解率*** | ![accuracy](images/accuracy.png)　| ***全ての予測のうち予測が正しかった割合***           |
+| Precision 　　| 適合率      | $$ \frac{TP}{TP + FP} $$ | 「正」と予測したうち、実際に正であった割合|
+| Recall    　　| 再現率      | $$ \frac{TP}{TP + FN} $$ | 実際に正であったもののうち、どれだけ「正」と予測できたか |
+| F1-score  　　| F1スコア    | $$ \frac{2 \times Precision \times Recall}{Precision + Recall} $$s | Precision・Recallの調和平均。バランス重視に使
 
+<!-- | 指標       | 日本語訳     | 定義・数式                                            | 主な意味・使いどころ                     |
+|-----------|------------|----------------------------------------------------|------------------------------------------|
+| ***Accuracy*** | ***正解率*** | \( \frac{TP + TN}{TP + TN + FP + FN} \)　| ***全ての予測のうち予測が正しかった割合***           |
+| Precision 　　| 適合率      | \( \frac{TP}{TP + FP} \)                           | 「正」と予測したうち、実際に正であった割合|
+| Recall    　　| 再現率      | \( \frac{TP}{TP + FN} \)                           | 実際に正であったもののうち、どれだけ「正」と予測できたか |
+| F1-score  　　| F1スコア    | \( \frac{2 \times Precision \times Recall}{Precision + Recall} \) | Precision・Recallの調和平均。バランス重視に使う       | -->
+
+<!-- \( \frac{予測が正しかった数}{予測したデータ数} \) -->
 
 ## セットアップ
 ### Docker環境へSSH接続
