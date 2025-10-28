@@ -61,10 +61,13 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 ```
 
 ### プログラムの実行
-Jupyterを開きmnist-classification/main.ipynbを開く。
+Jupyterを開きmnist-classification/main.ipynbを開く
 無事ノートブックが開けたらセルをクリックして`Ctrl+Enter`で実行する
 ![jupyter](resources/jupyter.png)
 
-## 実際にプログラムを動かしてみる
+### 実際にプログラムを動かしてみる↓
 https://github.com/user-attachments/assets/b2b0c5c9-c410-40d7-8abd-d9efe8bb446a
 
+### GPUメモリの解放
+Kernel -> Shut Down Kernelを押してGPUのメモリを解放する
+![release_memory](resources/release_memory.png)
