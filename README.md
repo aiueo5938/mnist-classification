@@ -54,7 +54,7 @@ cd ./mnist-classification
 
 ### [Pytorch](https://pytorch.org/get-started/locally/)のインストール
 ![install_torch](resources/install_torch.png)
-上記のように`pip list | grep torch`とコマンドを打っても、赤文字でインストール済みのライブラリが表示されない場合は下記のコマンドを実行する。
+<br>上記のように`pip list | grep torch`とコマンドを打っても、赤文字でインストール済みのライブラリが表示されない場合は下記のコマンドを実行する。
 ```
 python -m pip install --upgrade pip
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
