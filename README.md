@@ -41,11 +41,11 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 
 ## セットアップ
 ### Docker環境へSSH接続 & Jupyterの起動
-「2025事例研⽣向け 増⽥研究室 サーバー環境の使い⽅」を参照してください。
+「2025事例研⽣向け 増⽥研究室 サーバー環境の使い⽅」を参照
 
 ### リポジトリのクローン
 ![ssh_console](resources/ssh_console.png)<br>
-上記のようなコンソール上でコマンドを打ってください。
+上記のようなコンソール上でコマンドを打つ
 ```
 cd /work
 git clone https://github.com/aiueo5938/mnist-classification.git
