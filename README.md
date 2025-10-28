@@ -8,7 +8,7 @@
 </div>
 
 <br>
-今回はPython深層学習系ライブラリPytorchを使用してMNISTの分類とモデルの評価を行います。
+今回はPython深層学習系ライブラリPytorchを使用してMNISTの分類とモデルの評価を行う。
 
 ### 深層学習とは
 深層学習とは人間の脳の神経回路を模倣した多層構造の「ニューラルネットワーク」を用いて、大量のデータからルールやパターンを学習する機械学習の一種。
@@ -24,7 +24,7 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 
 ### モデルの評価方法
 機械学習における代表的な評価指標としてAccuracy, Recall Precision, F1がある。
-今回はAccuracyの算出を実際にプログラムで体験してもらう。
+今回はAccuracyの算出を実際にプログラムを動かして体験してもらう。
 | 略称  | 英語名             | 日本語訳   | 意味                       |
 |------|------------------|----------|-------------------------------|
 | TP   | True Positive    | 真陽性    | 本当は陽性で、予測も陽性と判定した     |
@@ -52,18 +52,18 @@ git clone https://github.com/aiueo5938/mnist-classification.git
 cd ./mnist-classification
 ```
 
-### pipのアップグレード
+### [Pytorch](https://pytorch.org/get-started/locally/)のインストール
+![install_torch](resources/install_torch.png)
+上記のように`pip list | grep torch`とコマンドを打っても、赤文字でインストール済みのライブラリが表示されない場合は下記のコマンドを実行する。
 ```
 python -m pip install --upgrade pip
-```
-### [Pytorch](https://pytorch.org/get-started/locally/)のインストール
-```
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
 
-### Jupyterを開きmnist-classification/main.ipynbを開く
-![jupyter](resources/jupyter.png)
+### プログラムの実行
+Jupyterを開きmnist-classification/main.ipynbを開く。
 無事ノートブックが開けたらセルをクリックして`Ctrl+Enter`で実行する
+![jupyter](resources/jupyter.png)
 
 ## 実際にプログラムを動かしてみる
 https://github.com/user-attachments/assets/b2b0c5c9-c410-40d7-8abd-d9efe8bb446a
