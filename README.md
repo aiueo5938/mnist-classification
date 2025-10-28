@@ -2,8 +2,12 @@
 
 <div align="center">
     <img src="https://miro.medium.com/v2/resize:fit:1400/1*SfRJNb5dOOPZYEFY5jDRqA.png" alt="mnist" title="mnist">
+    <div align="right">
+        出典：MNIST(hand written digit) Classification Using Neural Network(Step by Step) From Scratch
+    </div>
 </div>
 
+<br>
 今回はPython深層学習系ライブラリPytorchを使用してMNISTの分類とモデルの評価を行います。
 
 ### 深層学習とは
@@ -15,8 +19,9 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 </div>
 
 ## セットアップ
-### 各Docker環境へSSH接続
+### Docker環境へSSH接続
 200xxは⾃分のSSHポート番号に変更する
+「2025事例研⽣向け 増⽥研究室 サーバー環境の使い⽅」を参照してください。
 ```
 ssh root@swelab1.mc.yc.tcu.ac.jp -p 200xx
 ```
@@ -30,6 +35,10 @@ cd ./mnist-classification
 ```
 pyenv virtualenv 3.13.7 torch
 pyenv local torch
+```
+### pipのアップグレード
+```
+python -m pip install --upgrade pip
 ```
 ### [Pytorch](https://pytorch.org/get-started/locally/)のインストール
 ```
