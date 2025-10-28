@@ -34,10 +34,10 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 
 | 指標            | 日本語訳     | 定義・数式                            | 主な意味・使いどころ                            |
 |----------------|------------|-------------------------------------|-------------------------------------------|
-| **Accuracy**   | **正解率**   | ![accuracy](images/accuracy.svg)　  | **全ての予測のうち正しく予測できたものの割合**       |
-| Recall    　　  | 再現率       | ![recall](images/recall.svg)       | 実際に正であったもののうち、どれだけ「正」と予測できたか |
-| Precision 　　  | 適合率       | ![precision](images/precision.svg) | 「正」と予測したうち、実際に正であった割合           |
-| F1-score  　　  | F1スコア     | ![f1](images/f1.svg)               | Precision・Recallの調和平均。バランス重視に使う    |
+| **Accuracy**   | **正解率**   | ![accuracy](resources/accuracy.svg)　  | **全ての予測のうち正しく予測できたものの割合**       |
+| Recall    　　  | 再現率       | ![recall](resources/recall.svg)       | 実際に正であったもののうち、どれだけ「正」と予測できたか |
+| Precision 　　  | 適合率       | ![precision](resources/precision.svg) | 「正」と予測したうち、実際に正であった割合           |
+| F1-score  　　  | F1スコア     | ![f1](resources/f1.svg)               | Precision・Recallの調和平均。バランス重視に使う    |
 
 <!-- | 指標       | 日本語訳     | 定義・数式                                            | 主な意味・使いどころ                     |
 |-----------|------------|----------------------------------------------------|------------------------------------------|
@@ -49,30 +49,24 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 <!-- \( \frac{予測が正しかった数}{予測したデータ数} \) -->
 
 ## セットアップ
-<!-- ### Docker環境へSSH接続
-200xxは⾃分のSSHポート番号に変更する。
+### Docker環境へSSH接続 & Jupyterの起動
 「2025事例研⽣向け 増⽥研究室 サーバー環境の使い⽅」を参照してください。
-```
-ssh root@swelab1.mc.yc.tcu.ac.jp -p 200xx
-``` -->
 
-<!-- ### Jupyterの起動
-
-89xxは⾃分のSSHポート番号に変更する
-```
-nohup jupyter lab --port=89xx --ip=0.0.0.0 --allow-root --NotebookApp.token='' >/dev/null 2>&1 &
-``` -->
 ### リポジトリのクローン
+![ssh_console](resources/ssh_console.png)
+上記のようなコンソール上でコマンドを打ってください。
 ```
 cd /work
 git clone https://github.com/aiueo5938/mnist-classification.git
 cd ./mnist-classification
 ```
+
 <!-- ### 仮想環境の作成と有効化
 ```
 pyenv virtualenv 3.13.7 torch
 pyenv local torch
 ``` -->
+
 ### pipのアップグレード
 ```
 python -m pip install --upgrade pip
@@ -81,7 +75,15 @@ python -m pip install --upgrade pip
 ```
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
-### プログラムの実行
+
+### Jupyterを開きmnist-classification/main.ipynbを開く
+![jupyter](resources/jupyter.png)
+無事ノートブックが開けたらセルをクリックして`Ctrl+Enter`で実行する
+
+<!-- ### プログラムの実行
 ```
 python ./main.py
-```
+``` -->
+
+## プログラムが上手く実行できない場合
+![run](resources/run.mp4)
