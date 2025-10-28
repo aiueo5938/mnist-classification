@@ -66,3 +66,5 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 無事ノートブックが開けたらセルをクリックして`Ctrl+Enter`で実行する
 
 ## 実際にプログラムを動かしてみる
+https://github.com/user-attachments/assets/b2b0c5c9-c410-40d7-8abd-d9efe8bb446a
+
