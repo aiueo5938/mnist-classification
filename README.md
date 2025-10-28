@@ -34,15 +34,15 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 | 指標            | 日本語訳     | 定義・数式                           | 主な意味・使いどころ                            |
 |----------------|------------|-----------------------------------|---------------------------------------------|
 | ***Accuracy*** | ***正解率*** | ![accuracy](images/accuracy.svg)　| ***全ての予測のうち予測が正しかった割合***           |
-| Recall    　　  | 再現率       | ![accuracy](images/recall.png)    | 実際に正であったもののうち、どれだけ「正」と予測できたか |
-| Precision 　　  | 適合率       | ![accuracy](images/precision.png) | 「正」と予測したうち、実際に正であった割合            |
-| F1-score  　　  | F1スコア     | ![accuracy](images/f1.png)        | Precision・Recallの調和平均。バランス重視に使う    |
+| Recall    　　  | 再現率       | ![recall](images/recall.svg)    | 実際に正であったもののうち、どれだけ「正」と予測できたか |
+| Precision 　　  | 適合率       | ![precision](images/precision.svg) | 「正」と予測したうち、実際に正であった割合            |
+| F1-score  　　  | F1スコア     | ![f1](images/f1.svg)        | Precision・Recallの調和平均。バランス重視に使う    |
 
 <!-- | 指標       | 日本語訳     | 定義・数式                                            | 主な意味・使いどころ                     |
 |-----------|------------|----------------------------------------------------|------------------------------------------|
 | ***Accuracy*** | ***正解率*** | \( \frac{TP + TN}{TP + TN + FP + FN} \)　| ***全ての予測のうち予測が正しかった割合***           |
-| Precision 　　| 適合率      | \( \frac{TP}{TP + FP} \)                           | 「正」と予測したうち、実際に正であった割合|
 | Recall    　　| 再現率      | \( \frac{TP}{TP + FN} \)                           | 実際に正であったもののうち、どれだけ「正」と予測できたか |
+| Precision 　　| 適合率      | \( \frac{TP}{TP + FP} \)                           | 「正」と予測したうち、実際に正であった割合|
 | F1-score  　　| F1スコア    | \( \frac{2 \times Precision \times Recall}{Precision + Recall} \) | Precision・Recallの調和平均。バランス重視に使う       | -->
 
 <!-- \( \frac{予測が正しかった数}{予測したデータ数} \) -->
