@@ -23,7 +23,8 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 </div>
 
 ### モデルの評価方法
-機械学習における代表的な評価指標としてAccuracy, Recall Precision, F1があるが、今回はAccuracyの算出を実際にプログラムで体験してもらう。
+機械学習における代表的な評価指標としてAccuracy, Recall Precision, F1がある。
+今回はAccuracyの算出を実際にプログラムで体験してもらう。
 | 略称  | 英語名             | 日本語訳   | 意味                       |
 |------|------------------|----------|-------------------------------|
 | TP   | True Positive    | 真陽性    | 本当は陽性で、予測も陽性と判定した     |
