@@ -53,7 +53,7 @@ MNISTとは「Modified National Institute of Standards and Technology database�
 「2025事例研⽣向け 増⽥研究室 サーバー環境の使い⽅」を参照してください。
 
 ### リポジトリのクローン
-![ssh_console](resources/ssh_console.png)
+![ssh_console](resources/ssh_console.png)<br>
 上記のようなコンソール上でコマンドを打ってください。
 ```
 cd /work
@@ -85,5 +85,4 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 python ./main.py
 ``` -->
 
-## プログラムが上手く実行できない場合
-![run](resources/run.mp4)
+## 実際にプログラムを動かしてみる
