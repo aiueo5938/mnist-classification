@@ -60,7 +60,7 @@ python -m pip install --upgrade pip
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
 
-### プログラムの実行
+## プログラムの実行
 Jupyterを開きmnist-classification/main.ipynbを開く
 無事ノートブックが開けたらセルをクリックして`Ctrl+Enter`で実行する
 ![jupyter](resources/jupyter.png)
