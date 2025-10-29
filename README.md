@@ -19,7 +19,7 @@ MNISTとは「Modified National Institute of Standards and Technology database�
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/MNIST_dataset_example.png" alt="mnist" title="mnist">
 </div>
 <div align="right">
-    出典：IMNIST database - Wikipedia
+    出典：MNIST database - Wikipedia
 </div>
 
 ### モデルの評価方法
