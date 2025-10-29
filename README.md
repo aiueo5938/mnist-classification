@@ -67,3 +67,7 @@ Jupyterを開きmnist-classification/main.ipynbを開く
 
 ### 実際にプログラムを動かしてみる↓
 https://github.com/user-attachments/assets/13179015-a359-43e8-80e0-a8ab431be97a
+
+### GPUメモリの解放
+Kernel -> Shut Down Kernelを押してGPUのメモリを解放する
+![release_memory](resources/release_memory.png)
