@@ -4,6 +4,9 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
+# デバイスの設定（GPUが使える場合はGPUにする）
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 # データ前処理（正規化）
 transform = transforms.Compose(
     [
@@ -46,7 +49,7 @@ class Net(nn.Module):
         return x
 
 
-model = Net()
+model = Net().to(device)  # モデルをGPUに転送
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
@@ -56,6 +59,7 @@ for epoch in range(num_epochs):
     model.train()
     running_loss = 0.0
     for images, labels in train_loader:
+        images, labels = images.to(device), labels.to(device)  # データをGPUに転送
         optimizer.zero_grad()
         outputs = model(images)
         loss = criterion(outputs, labels)
@@ -70,6 +74,7 @@ correct = 0
 total = 0
 with torch.no_grad():
     for images, labels in test_loader:
+        images, labels = images.to(device), labels.to(device)  # テストデータもGPUに転送
         outputs = model(images)
         _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
